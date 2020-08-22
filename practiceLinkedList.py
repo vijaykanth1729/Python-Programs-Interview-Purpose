@@ -62,6 +62,14 @@ class LinkedList:
             print(current_node.data)
             current_node = current_node.next
 
+    def nodeCount(self):
+        current = self.head
+        count = 1
+        while current.next is not None:
+            current = current.next
+            count += 1
+        return count
+
 
 first_node = Node("John")
 linkedList = LinkedList()
@@ -75,3 +83,4 @@ linkedList.insertHead(fourth_node)
 fifth_node = Node("Iam at position 1")
 linkedList.insertAt(fifth_node, 1)
 linkedList.printList()
+print(linkedList.nodeCount())
