@@ -6,7 +6,7 @@ B       C
 '''
 
 '''
-MRO rule tells that if a method is not available in class d,
+MRO (method resolution order) rule tells that if a method is not available in class d,
 then it verifies the method in class B, if not available
 then it checks in class C.
 in this case, class B method is executed..
